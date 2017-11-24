@@ -1,0 +1,23 @@
+name = waltons_clark
+description = Starter theme designed for giving the developer more flexibility
+version = 1.2.3
+core = 6.x
+engine = phptemplate
+stylesheets[all][] = css/bootstrap.css
+stylesheets[all][] = css/theme.css
+stylesheets[print][] = css/print.css
+stylesheets[all][] = css/modal.css
+scripts[] = js/bootstrap.min.js
+scripts[] = js/script.js
+
+regions[header_top] = Header top
+regions[top_header] = Top header
+regions[left] = Left
+regions[inner_banner] = Inner Banner
+regions[addthis_icon] = Addthis icon
+regions[content] = Content
+regions[front_news_region] = Front news region
+regions[twitter_box] = Twitter box
+regions[content_bottom] = Content Bottom
+regions[footer_logo] = Footer logo
+regions[footer] = Footer

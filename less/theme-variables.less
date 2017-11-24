@@ -1,0 +1,63 @@
+// @file: theme-variables.less
+// Add custom variables for use in theme.less
+
+@base-color: #000000;
+@brand-primary: #002f5f;
+
+//== Typography
+//
+@font-size-base: 16px;
+@line-height-base:        1.900; // 36/20
+@font-family-open-sans:  'Open Sans', sans-serif, arial;
+@font-family-source-sans: 'Source Sans Pro', sans-serif, arial;
+
+@font-size-h1:            floor((@font-size-base * 4.688)); // ~75px
+@font-size-h2:            floor((@font-size-base * 3.250)); // ~52px
+@font-size-h3:            ceil((@font-size-base * 2.250)); // ~36px
+@font-size-h4:            ceil((@font-size-base * 1.875)); // ~30px
+@font-size-h5:            ceil((@font-size-base * 1.500)); // ~24px
+@font-size-h6:            ceil((@font-size-base * 1.250)); // ~20px
+
+//** Global
+@link-color:  #0095e1;
+@link-hover-color:  #fba318;
+@text-decoration-none: none;
+@link-decoration-underline: underline;
+@link-outline-none:  none;
+
+//
+// Typography
+// --------------------------------------------------
+
+body {   
+    color: @base-color;
+    font-family: @font-family-open-sans;
+    font-size: @font-size-base;
+    line-height: @line-height-base;
+    -ms-overflow-style: scrollbar;
+}
+
+// Headings
+// -------------------------
+
+
+h1, .h1 { font-size: @font-size-h1; }
+h2, .h2 { font-size: @font-size-h2; }
+h3, .h3 { font-size: @font-size-h3; }
+h4, .h4 { font-size: @font-size-h4; }
+h5, .h5 { font-size: @font-size-h5; }
+h6, .h6 { font-size: @font-size-h6; }
+
+a {
+    outline: @link-outline-none;
+    color: @link-color;
+    text-decoration: @link-decoration-underline;
+}
+a:link, a:visited {
+    outline: @link-outline-none;
+    text-decoration: @text-decoration-none;
+}
+a:active, a:focus, a:hover {
+    color: @link-hover-color;
+    text-decoration: @link-decoration-underline;
+}
